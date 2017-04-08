@@ -1,0 +1,59 @@
+\hypertarget{ReadFSAFromFile_8h}{\section{Read\+F\+S\+A\+From\+File.\+h File Reference}
+\label{ReadFSAFromFile_8h}\index{Read\+F\+S\+A\+From\+File.\+h@{Read\+F\+S\+A\+From\+File.\+h}}
+}
+{\ttfamily \#include \char`\"{}Finite\+State\+Automata.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+Include dependency graph for Read\+F\+S\+A\+From\+File.\+h\+:
+This graph shows which files directly or indirectly include this file\+:
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structFiniteStateAutomata}{Finite\+State\+Automata} $\ast$ \hyperlink{ReadFSAFromFile_8h_a7df20d51da0904b820b27f2359097e2a}{parse\+F\+S\+A\+From\+File} (char $\ast$)
+\begin{DoxyCompactList}\small\item\em Parses a finite state automata from a \char`\"{}dfsa\char`\"{} file. \end{DoxyCompactList}\item 
+int $\ast$$\ast$ \hyperlink{ReadFSAFromFile_8h_a4f1df696da5c7c398bbef8b5e0320211}{initialize\+State\+Table} (int, int)
+\item 
+int \hyperlink{ReadFSAFromFile_8h_a327773a2060d2827b1124833dc376c1b}{count\+States} (F\+I\+L\+E $\ast$)
+\item 
+void \hyperlink{ReadFSAFromFile_8h_a98621fdecef379460dfcbbc6b4985942}{read\+State\+Transitions} (F\+I\+L\+E $\ast$, int $\ast$$\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{ReadFSAFromFile_8h_a327773a2060d2827b1124833dc376c1b}{\index{Read\+F\+S\+A\+From\+File.\+h@{Read\+F\+S\+A\+From\+File.\+h}!count\+States@{count\+States}}
+\index{count\+States@{count\+States}!Read\+F\+S\+A\+From\+File.\+h@{Read\+F\+S\+A\+From\+File.\+h}}
+\subsubsection[{count\+States}]{\setlength{\rightskip}{0pt plus 5cm}int count\+States (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{ReadFSAFromFile_8h_a327773a2060d2827b1124833dc376c1b}
+\hypertarget{ReadFSAFromFile_8h_a4f1df696da5c7c398bbef8b5e0320211}{\index{Read\+F\+S\+A\+From\+File.\+h@{Read\+F\+S\+A\+From\+File.\+h}!initialize\+State\+Table@{initialize\+State\+Table}}
+\index{initialize\+State\+Table@{initialize\+State\+Table}!Read\+F\+S\+A\+From\+File.\+h@{Read\+F\+S\+A\+From\+File.\+h}}
+\subsubsection[{initialize\+State\+Table}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$$\ast$ initialize\+State\+Table (
+\begin{DoxyParamCaption}
+\item[{int}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)}}\label{ReadFSAFromFile_8h_a4f1df696da5c7c398bbef8b5e0320211}
+\hypertarget{ReadFSAFromFile_8h_a7df20d51da0904b820b27f2359097e2a}{\index{Read\+F\+S\+A\+From\+File.\+h@{Read\+F\+S\+A\+From\+File.\+h}!parse\+F\+S\+A\+From\+File@{parse\+F\+S\+A\+From\+File}}
+\index{parse\+F\+S\+A\+From\+File@{parse\+F\+S\+A\+From\+File}!Read\+F\+S\+A\+From\+File.\+h@{Read\+F\+S\+A\+From\+File.\+h}}
+\subsubsection[{parse\+F\+S\+A\+From\+File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Finite\+State\+Automata}$\ast$ parse\+F\+S\+A\+From\+File (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{ReadFSAFromFile_8h_a7df20d51da0904b820b27f2359097e2a}
+
+
+Parses a finite state automata from a \char`\"{}dfsa\char`\"{} file. 
+
+See the R\+E\+A\+D\+M\+E for a more detailed description on what formatting is required for the file to be read correctly.
+
+Parses a finite state automata from a \char`\"{}dfsa\char`\"{} file.
+
+blah blah blah more description. \hypertarget{ReadFSAFromFile_8h_a98621fdecef379460dfcbbc6b4985942}{\index{Read\+F\+S\+A\+From\+File.\+h@{Read\+F\+S\+A\+From\+File.\+h}!read\+State\+Transitions@{read\+State\+Transitions}}
+\index{read\+State\+Transitions@{read\+State\+Transitions}!Read\+F\+S\+A\+From\+File.\+h@{Read\+F\+S\+A\+From\+File.\+h}}
+\subsubsection[{read\+State\+Transitions}]{\setlength{\rightskip}{0pt plus 5cm}void read\+State\+Transitions (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{, }
+\item[{int $\ast$$\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{ReadFSAFromFile_8h_a98621fdecef379460dfcbbc6b4985942}
