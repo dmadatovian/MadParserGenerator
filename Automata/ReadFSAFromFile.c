@@ -23,9 +23,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-//char delimiter[] = "-";
-
 /** This function parses a finite state automata from an input file.
 blah blah blah more description.
 */

@@ -18,27 +18,3 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#include "FiniteStateAutomata.h"
-
-
-void changeState(FiniteStateAutomata fsa, int input){
-	fsa.currentState = fsa.stateTable[fsa.currentState][input];
-}
-
-int isInFinalState(FiniteStateAutomata fsa){
-	return fsa.finalStates[fsa.currentState];
-}
-
-void destroyFSA(FiniteStateAutomata *fsa){
-	return;
-}
-
-void addStateTransition(FiniteStateAutomata fsa, int state, int input, int nextState){
-	if(state < fsa.numberOfStates && nextState < fsa.numberOfStates){
-		fsa.stateTable[state][input]=nextState;
-	}
-}
-
-void addFinalState(FiniteStateAutomata fsa, int state){
-	if(state < fsa.numberOfStates) fsa.finalStates[state]=1;
-}

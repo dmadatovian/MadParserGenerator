@@ -21,6 +21,8 @@
 #ifndef FINITESTATEAUTOMATA
 #define FINITESTATEAUTOMATA
 struct FiniteStateAutomata{
+	int numberOfStates;
+	int numberOfFinalStates;
 	int **stateTable;
 	int currentState;
 	char *finalStates;
@@ -28,5 +30,7 @@ struct FiniteStateAutomata{
 typedef struct FiniteStateAutomata FiniteStateAutomata;
 void changeState(FiniteStateAutomata,int);
 int isFinalState(FiniteStateAutomata,int);
+void addStateTransition(FiniteStateAutomata,int,int,int);
+void addFinalState(FiniteStateAutomata,int);
 void destroyFSA(FiniteStateAutomata*);
 #endif
